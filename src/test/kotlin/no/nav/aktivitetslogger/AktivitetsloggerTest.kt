@@ -8,13 +8,12 @@ import no.nav.dagpenger.aktivitetslogger.Kontekst
 import no.nav.helse.rapids_rivers.testsupport.TestRapid
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.TestInstance
 import java.util.UUID
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class AktivitetsloggerTest {
-    companion object {
-        private var rapid: TestRapid = TestRapid()
-    }
-
+    private var rapid: TestRapid = TestRapid()
     private val aktivitetslogger: Aktivitetslogger = Aktivitetslogger.logger(rapid)
 
     private val hendelse = TestHendelse(UUID.randomUUID(), "11111111111")

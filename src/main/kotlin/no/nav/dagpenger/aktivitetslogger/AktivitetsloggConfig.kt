@@ -6,7 +6,7 @@ import java.io.FileNotFoundException
 import java.net.InetAddress
 import java.util.UUID
 
-class AktivitetsloggConfig {
+internal class AktivitetsloggConfig {
     companion object {
         fun fromEnv(env: Map<String, String>) = kafkaConfig(env, generateInstanceId(env))
 

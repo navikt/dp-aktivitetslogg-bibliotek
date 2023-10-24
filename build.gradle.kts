@@ -2,6 +2,7 @@ import java.net.URI
 
 plugins {
     id("org.jetbrains.kotlin.jvm")
+    id("org.jetbrains.dokka") version "1.9.10"
     `maven-publish`
     `java-library`
     common

@@ -1,6 +1,12 @@
 package no.nav.dagpenger.aktivitetslogger
 
-enum class Alvorlighetsgrad {
+/**
+ * Klassifisering av logghendelsene
+ */
+internal enum class Alvorlighetsgrad {
+    /**
+     * Brukes
+     */
     INFO,
     ADVARSEL,
     BEHOV,
