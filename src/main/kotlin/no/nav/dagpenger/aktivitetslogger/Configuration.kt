@@ -1,4 +1,4 @@
-package no.nav.aktivitetslogger
+package no.nav.dagpenger.aktivitetslogger
 
 import com.natpryce.konfig.ConfigurationMap
 import com.natpryce.konfig.ConfigurationProperties

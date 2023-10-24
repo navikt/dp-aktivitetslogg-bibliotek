@@ -1,12 +1,12 @@
-package no.sjovatsen.aktivitetslogger
+package no.nav.dagpenger.aktivitetslogger
 
 import java.time.LocalDateTime
 
 class Aktivitet(
     // val alvorlighetsgrad: Alvorlighetsgrad,
-    val melding: String,
-    val tidsstempel: LocalDateTime,
-    val kontekst: List<Kontekst>,
+    private val melding: String,
+    private val kontekst: List<Kontekst>,
+    private val tidsstempel: LocalDateTime = LocalDateTime.now(),
 ) {
 
     // fun alvorlighetsgrad() = alvorlighetsgrad

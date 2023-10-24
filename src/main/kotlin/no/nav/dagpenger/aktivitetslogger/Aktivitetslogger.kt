@@ -1,41 +1,53 @@
-package no.sjovatsen.aktivitetslogger
+package no.nav.dagpenger.aktivitetslogger
 
 import mu.KotlinLogging
-import no.nav.aktivitetslogger.AktivitetsloggConfig
-import no.nav.aktivitetslogger.Configuration.config
-import no.nav.aktivitetslogger.Hendelse
+import no.nav.dagpenger.aktivitetslogger.Configuration.config
 import no.nav.helse.rapids_rivers.JsonMessage
 import no.nav.helse.rapids_rivers.KafkaRapid
+import no.nav.helse.rapids_rivers.RapidsConnection
 import java.time.LocalDateTime
 
-typealias aktivitetslogger = Aktivitetslogger
+class Aktivitetslogger private constructor(private val kafkaRapid: RapidsConnection) {
 
-object Aktivitetslogger {
+    companion object {
+
+        @Volatile
+        private var logger: Aktivitetslogger? = null
+
+        fun logger(
+            rapidsConnection: RapidsConnection = KafkaRapid.create(
+                AktivitetsloggConfig.fromEnv(config),
+                config.getValue("KAFKA_RAPID_TOPIC"),
+            ),
+        ) =
+            logger ?: synchronized(this) {
+                logger ?: Aktivitetslogger(rapidsConnection).also { logger = it }
+            }
+    }
 
     private val logger = KotlinLogging.logger { }
-
-    private val kafkaRapid: KafkaRapid = KafkaRapid.create(
-        AktivitetsloggConfig.fromEnv(config),
-        config.getValue("KAFKA_RAPID_TOPIC"),
-    )
 
     init {
         logger.info { "Starter aktivitetslogg" }
     }
 
-    fun info(hendelse: Hendelse) {
-        send(hendelse, Alvorlighetsgrad.INFO, null)
-    }
-
     fun info(hendelse: Hendelse, aktivitet: Aktivitet?) {
         send(hendelse, Alvorlighetsgrad.INFO, aktivitet)
     }
-
-    fun advarsel(hendelse: Hendelse) {
-        send(hendelse, Alvorlighetsgrad.ADVARSEL, null)
-    }
     fun advarsel(hendelse: Hendelse, aktivitet: Aktivitet?) {
         send(hendelse, Alvorlighetsgrad.ADVARSEL, aktivitet)
+    }
+
+    fun behov(hendelse: Hendelse, aktivitet: Aktivitet?) {
+        send(hendelse, Alvorlighetsgrad.BEHOV, aktivitet)
+    }
+
+    fun feil(hendelse: Hendelse, aktivitet: Aktivitet?) {
+        send(hendelse, Alvorlighetsgrad.FEIL, aktivitet)
+    }
+
+    fun alvorlig(hendelse: Hendelse, aktivitet: Aktivitet?) {
+        send(hendelse, Alvorlighetsgrad.ALVORLIG, aktivitet)
     }
 
     private fun send(hendelse: Hendelse, alvorlighetsgrad: Alvorlighetsgrad, aktivitet: Aktivitet?) {

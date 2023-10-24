@@ -1,4 +1,4 @@
-package no.sjovatsen.aktivitetslogger
+package no.nav.dagpenger.aktivitetslogger
 
 enum class Alvorlighetsgrad {
     INFO,

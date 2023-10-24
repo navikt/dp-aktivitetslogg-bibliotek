@@ -1,4 +1,4 @@
-package no.nav.aktivitetslogger
+package no.nav.dagpenger.aktivitetslogger
 
 import java.util.UUID
 

@@ -1,4 +1,4 @@
-package no.nav.aktivitetslogger
+package no.nav.dagpenger.aktivitetslogger
 
 import no.nav.helse.rapids_rivers.KafkaConfig
 import java.io.File
