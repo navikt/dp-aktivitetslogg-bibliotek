@@ -50,7 +50,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = URI("https://maven.pkg.github.com/navikt/dp-aktivitetslogg")
+            url = URI("https://maven.pkg.github.com/navikt/dp-aktivitetslogg-bibliotek")
             credentials {
                 val githubUser: String? by project
                 val githubPassword: String? by project
