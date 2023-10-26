@@ -73,7 +73,7 @@ jobs:
         with:
           java-version: 11
       - name: Build documentation
-        run: ./gradlew asciidoctor
+        run: ./gradlew dokkaHtml
       - name: Publish documentation
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
