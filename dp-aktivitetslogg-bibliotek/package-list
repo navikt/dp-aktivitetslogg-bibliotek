@@ -1,0 +1,26 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:no.nav.dagpenger.aktivitetslogger////PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/index.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitet///PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitet/index.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitet/Aktivitet/#kotlin.String#kotlin.collections.List[no.nav.dagpenger.aktivitetslogger.Kontekst]#java.time.LocalDateTime/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitet/-aktivitet.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitet/kontekst/#/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitet/kontekst.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitet/melding/#/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitet/melding.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitet/tidsstempel/#/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitet/tidsstempel.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitetslogger.Companion///PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitetslogger/-companion/index.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitetslogger.Companion/logger/#no.nav.helse.rapids_rivers.RapidsConnection/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitetslogger/-companion/logger.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitetslogger///PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitetslogger/index.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitetslogger/advarsel/#no.nav.dagpenger.aktivitetslogger.Hendelse#no.nav.dagpenger.aktivitetslogger.Aktivitet?/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitetslogger/advarsel.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitetslogger/alvorlig/#no.nav.dagpenger.aktivitetslogger.Hendelse#no.nav.dagpenger.aktivitetslogger.Aktivitet?/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitetslogger/alvorlig.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitetslogger/behov/#no.nav.dagpenger.aktivitetslogger.Hendelse#no.nav.dagpenger.aktivitetslogger.Aktivitet?/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitetslogger/behov.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitetslogger/feil/#no.nav.dagpenger.aktivitetslogger.Hendelse#no.nav.dagpenger.aktivitetslogger.Aktivitet?/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitetslogger/feil.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Aktivitetslogger/info/#no.nav.dagpenger.aktivitetslogger.Hendelse#no.nav.dagpenger.aktivitetslogger.Aktivitet?/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-aktivitetslogger/info.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Hendelse///PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-hendelse/index.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Hendelse/Hendelse/#java.util.UUID#kotlin.String/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-hendelse/-hendelse.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Hendelse/ident/#/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-hendelse/ident.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Hendelse/meldingsreferanseId/#/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-hendelse/meldingsreferanse-id.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Kontekst///PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-kontekst/index.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Kontekst/Kontekst/#kotlin.String#kotlin.collections.Map[kotlin.String,kotlin.String]/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-kontekst/-kontekst.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Kontekst/map/#/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-kontekst/map.html
+$dokka.location:no.nav.dagpenger.aktivitetslogger/Kontekst/type/#/PointingToDeclaration/dp-aktivitetslogg-bibliotek/no.nav.dagpenger.aktivitetslogger/-kontekst/type.html
+no.nav.dagpenger.aktivitetslogger
+
